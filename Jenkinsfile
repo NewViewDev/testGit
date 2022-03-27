@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/NewViewGames/testGit.git'
+                sh "git 'https://github.com/NewViewGames/testGit.git'"
+                sh "git pull"
 //                 sh "cat 'New Text Document.txt'"
                 sh "pwd"
             }
