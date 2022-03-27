@@ -7,6 +7,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 git 'https://github.com/NewViewGames/testGit.git'
                 sh "cat 'New Text Document.txt'"
+                pwd
             }
         }
     }
