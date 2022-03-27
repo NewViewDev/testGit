@@ -6,8 +6,8 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/NewViewGames/testGit.git'
-                sh "cat 'New Text Document.txt'"
-                pwd
+//                 sh "cat 'New Text Document.txt'"
+                sh "pwd"
             }
         }
     }
